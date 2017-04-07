@@ -18,7 +18,11 @@ class Rentals extends Component {
                         <Carousel.Item>
                             <img width={900} height={500} alt="900x500" src="/images/studiopic.jpeg"/>
                         </Carousel.Item>
+                        <Carousel.Item>
+                            <img width={900} height={500} alt="900x500" src="/images/studiopic.jpeg"/>
+                        </Carousel.Item>
                     </Carousel>
+
                 </Col>
             </Section>
         )
