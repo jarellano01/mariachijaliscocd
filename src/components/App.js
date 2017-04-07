@@ -14,10 +14,10 @@ class App extends Component {
                 <Background/>
                 <NavbarCustom/>
                 <Landing />
+
                 <About/>
                 <Instructors/>
                 <Contact/>
-
             </div>
         );
     }

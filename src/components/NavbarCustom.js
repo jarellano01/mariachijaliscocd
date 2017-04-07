@@ -1,8 +1,23 @@
 import React, {Component} from 'react';
 import {Navbar, Nav, NavItem} from 'react-bootstrap';
 import scrollToElement from 'scroll-to-element';
+import './NavbarCustom.css';
 
 class NavbarCustom extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            navItems: [
+                {title: 'About', link: '#about'},
+                {title: 'Instructors', link: '#instructors'},
+                {title: 'Schedule', link: '#schedule'},
+                {title: 'Rentals', link: '#rentals'},
+                {title: 'Events', link: '#events'},
+                {title: 'Videos', link: '#videos'},
+                {title: 'Contact Us', link: '#contact'}
+            ]
+        }
+    }
     componentDidMount(){
         let myID = document.getElementById("my-nav");
 
@@ -22,30 +37,32 @@ class NavbarCustom extends Component {
 
     scrollToId(id){
         scrollToElement(id,{
-            offset: -100,
+            offset: -50,
             ease: 'inOutSine',
             duration: 1500
         })
     }
 
+    renderNavItems= () => {
+        return this.state.navItems.map((item) => {
+            return (
+                <NavItem key={item.title} onClick={() => this.scrollToId(item.link)}>{item.title}</NavItem>
+            )
+        })
+    };
+
     render(){
         return (
-            <Navbar inverse collapseOnSelect fixedTop id="my-nav" className="hide1">
+            <Navbar inverse collapseOnSelect fixedTop id="my-nav" className="hide1 Navbar-Custom">
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <a href="#">Crystal Arts Dance</a>
+                        <a href="#"><img src="/images/icon.png" alt=""/>Crystal Arts Dance</a>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
                 <Navbar.Collapse>
                     <Nav pullRight>
-                        <NavItem eventKey={1} onClick={() => this.scrollToId('#about')}>About Us</NavItem>
-                        <NavItem eventKey={2} onClick={() => this.scrollToId('#instructors')}>Instructors</NavItem>
-                        <NavItem eventKey={2} onClick={() => this.scrollToId('#schedule')}>Schedule</NavItem>
-                        <NavItem eventKey={2} onClick={() => this.scrollToId('#rentals')}>Rentals</NavItem>
-                        <NavItem eventKey={2} onClick={() => this.scrollToId('#events')}>Events</NavItem>
-                        <NavItem eventKey={2} onClick={() => this.scrollToId('#videos')}>Videos</NavItem>
-                        <NavItem eventKey={2} onClick={() => this.scrollToId('#contact')}>Contact Us</NavItem>
+                        {this.renderNavItems()}
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

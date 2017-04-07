@@ -11,7 +11,7 @@ class Landing extends Component {
                         <img src="/images/logo_black.png" className="logo img-responsive" alt="" />
                     </div>
                     <a className="btn btn-default learn-more" onClick={()=> scrollToElement('#about',{
-                        offset: -100,
+                        offset: -50,
                         ease: 'inOutSine',
                         duration: 1500
                     })}>Learn More</a>

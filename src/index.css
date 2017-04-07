@@ -48,6 +48,10 @@ html {
 .modal-content {
 
 }
+p {
+  line-height: 30px;
+  font-size: 120%;
+}
 
 .fade {
   opacity: 0;

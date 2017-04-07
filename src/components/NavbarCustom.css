@@ -1,0 +1,22 @@
+.Navbar-Custom {
+    font-family: cursive;
+}
+.navbar-inverse {
+     background-color: #000000;
+     border-color: #080808;
+ }
+
+.navbar-brand img{
+    height: 100%;
+    margin-right:10px;
+    display: inline;
+}
+.navbar-brand {
+    padding: 4px 15px;
+}
+@media (max-width: 720px) {
+    .Navbar-Custom {
+        text-align: center;
+        font-size: 150%;
+    }
+}

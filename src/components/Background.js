@@ -2,11 +2,9 @@ import React, {Component} from 'react';
 
 
 class Background extends Component {
-    render(){
+    render() {
         return (
-
-                <img src="/images/cropped-face.jpg" className="background" alt=""/>
-
+            <img src="/images/cropped-face.jpg" className="background" alt=""/>
         )
     }
 }

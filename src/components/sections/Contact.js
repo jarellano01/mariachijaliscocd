@@ -35,7 +35,7 @@ class Contact extends Component {
                                 />
                             </FormGroup>
                             <FormGroup controlId="formControlsTextarea" className="col-sm-12" bsSize="large">
-                                <ControlLabel>Textarea</ControlLabel>
+                                <ControlLabel>Message</ControlLabel>
                                 <FormControl componentClass="textarea"
                                              placeholder="Tell us a little about your self and how we can help."
                                              rows="4"/>

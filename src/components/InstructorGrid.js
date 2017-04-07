@@ -169,5 +169,4 @@ class InstructorGrid extends Component {
     }
 }
 
-
 export default InstructorGrid;

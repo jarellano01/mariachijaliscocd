@@ -37,3 +37,10 @@
 .instructor-col {
     margin-bottom: 20px;
 }
+
+@media (max-width: 720px) {
+    .col-square div{
+        height: 40px;
+        padding-top:10px;
+    }
+}
