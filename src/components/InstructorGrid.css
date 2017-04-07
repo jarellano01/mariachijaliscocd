@@ -1,0 +1,39 @@
+.col-square {
+    position:relative;
+    overflow:hidden;
+    padding-bottom:100%;
+    background-color: black;
+}
+
+.col-square img {
+    position:absolute;
+}
+.col-square div{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    background-color: rgba(142, 54, 145, 0.81);
+    text-align: center;
+    bottom: 0;
+    height: 0;
+
+    font-family: cursive;
+
+    -o-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+.col-square:hover > div {
+    height: 40px;
+    padding-top: 10px;
+}
+
+.instructor-block:hover {
+    cursor: pointer;
+}
+
+.instructor-col {
+    margin-bottom: 20px;
+}

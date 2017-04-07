@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height:100%;
+  overflow: auto;
+  background-color: transparent;
+}
+html {
+  /*background: url("/images/cropped-face.jpg") no-repeat fixed;*/
+  background-size: cover;
+  background-color: black;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  z-index:-1;
+  /*zoom: 2;  //increase if you have very small images*/
+
+  display: block;
+  margin: auto;
+
+  height: 100%;
+  max-height: 100%;
+  }
+.h1, .h2, .h3, h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.hide1{
+  /*display: none;*/
+  opacity: 0 !important;
+
+}
+
+.navbar {
+  opacity: 1;
+  -webkit-transition:  .5s ease-out;
+  -moz-transition:  .5s ease-out;
+  -o-transition:  .5s ease-out;
+  transition:  .5s ease-out;
+}
+.modal-backdrop {
+
+}
+.modal-content {
+
+}
+
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity .1s linear;
+  -o-transition: opacity .1s linear;
+  transition: opacity .1s linear;
+}
+.modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform .5s ease-out;
+  -o-transition: -o-transform .5s ease-out;
+  transition: transform .5s ease-out;
+}

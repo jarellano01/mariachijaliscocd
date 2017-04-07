@@ -1,0 +1,14 @@
+.Section {
+    background-color: rgba(169, 169, 169, 0.62);
+    color: white;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.Section .title {
+    font-family: cursive;
+    font-size: 60px;
+    text-align: center;
+}
