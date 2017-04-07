@@ -1,20 +1,34 @@
 .Navbar-Custom {
     font-family: cursive;
 }
-.navbar-inverse {
-     background-color: #000000;
-     border-color: #080808;
- }
 
-.navbar-brand img{
+.navbar-inverse {
+    background-color: #000000;
+    border-color: #080808;
+}
+
+.navbar-brand img {
     height: 100%;
-    margin-right:10px;
+    margin-right: 10px;
     display: inline;
 }
+
 .navbar-brand {
     padding: 4px 15px;
+    font-size: 24px;
 }
-@media (max-width: 720px) {
+
+.nav > li > a {
+    padding: 10px 10px;
+}
+.nav > li > a {
+    padding: 15px 10px;
+}
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+    max-height: 370px;
+}
+
+@media (max-width: 766px) {
     .Navbar-Custom {
         text-align: center;
         font-size: 150%;

@@ -39,6 +39,9 @@
 }
 
 @media (max-width: 720px) {
+    .col-square {
+        padding-bottom: calc(100% + 40px);
+    }
     .col-square div{
         height: 40px;
         padding-top:10px;

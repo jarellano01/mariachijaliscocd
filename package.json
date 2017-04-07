@@ -6,12 +6,17 @@
     "react-scripts": "0.9.5"
   },
   "dependencies": {
+    "axios": "^0.16.0",
+    "firebase": "^3.7.5",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.8",
     "react-dom": "^15.4.2",
     "react-edit-inline": "^1.0.8",
+    "react-iframe": "^0.0.4",
     "react-newline-to-break": "^1.0.6",
-    "scroll-to-element": "^2.0.0"
+    "react-youtube": "^7.3.0",
+    "scroll-to-element": "^2.0.0",
+    "youtube-search": "^1.0.9"
   },
   "scripts": {
     "start": "react-scripts start",

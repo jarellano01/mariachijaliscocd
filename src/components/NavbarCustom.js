@@ -4,24 +4,25 @@ import scrollToElement from 'scroll-to-element';
 import './NavbarCustom.css';
 
 class NavbarCustom extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             navItems: [
                 {title: 'About', link: '#about'},
                 {title: 'Instructors', link: '#instructors'},
                 {title: 'Schedule', link: '#schedule'},
-                {title: 'Rentals', link: '#rentals'},
                 {title: 'Events', link: '#events'},
                 {title: 'Videos', link: '#videos'},
+                {title: 'Rentals', link: '#rentals'},
                 {title: 'Contact Us', link: '#contact'}
             ]
         }
     }
-    componentDidMount(){
+
+    componentDidMount() {
         let myID = document.getElementById("my-nav");
 
-        let myScrollFunc = function() {
+        let myScrollFunc = function () {
             let h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) - 100;
             let y = window.scrollY;
 
@@ -35,15 +36,15 @@ class NavbarCustom extends Component {
         window.addEventListener("scroll", myScrollFunc);
     }
 
-    scrollToId(id){
-        scrollToElement(id,{
+    scrollToId = (id) => {
+        scrollToElement(id, {
             offset: -50,
             ease: 'inOutSine',
             duration: 1500
         })
     }
 
-    renderNavItems= () => {
+    renderNavItems = () => {
         return this.state.navItems.map((item) => {
             return (
                 <NavItem key={item.title} onClick={() => this.scrollToId(item.link)}>{item.title}</NavItem>
@@ -51,7 +52,7 @@ class NavbarCustom extends Component {
         })
     };
 
-    render(){
+    render() {
         return (
             <Navbar inverse collapseOnSelect fixedTop id="my-nav" className="hide1 Navbar-Custom">
                 <Navbar.Header>

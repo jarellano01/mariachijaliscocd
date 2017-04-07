@@ -46,7 +46,17 @@ html {
 
 }
 .modal-content {
-
+  background-color: transparent;
+  color: white;
+  border: 1px solid #999;
+  border-radius: 0;
+}
+.modal-video {
+  width: 100%;
+}
+.modal-backdrop.in {
+  filter: alpha(opacity=50);
+  opacity: .9;
 }
 p {
   line-height: 30px;

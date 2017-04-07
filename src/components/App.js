@@ -6,6 +6,8 @@ import Instructors from './sections/Instructors';
 import Contact from './sections/Contact';
 import NavbarCustom from './NavbarCustom';
 import Background from './Background';
+import Videos from './sections/Videos';
+import Rentals from './sections/Rentals';
 
 class App extends Component {
     render() {
@@ -14,9 +16,10 @@ class App extends Component {
                 <Background/>
                 <NavbarCustom/>
                 <Landing />
-
                 <About/>
                 <Instructors/>
+                <Videos/>
+                <Rentals/>
                 <Contact/>
             </div>
         );
