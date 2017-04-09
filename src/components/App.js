@@ -8,6 +8,7 @@ import NavbarCustom from './NavbarCustom';
 import Background from './Background';
 import Videos from './sections/Videos';
 import Rentals from './sections/Rentals';
+import Classes from './sections/Classes';
 
 class App extends Component {
     render() {
@@ -18,8 +19,10 @@ class App extends Component {
                 <Landing />
                 <About/>
                 <Instructors/>
+                <Classes/>
                 <Videos/>
                 <Rentals/>
+
                 <Contact/>
             </div>
         );

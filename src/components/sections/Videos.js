@@ -29,7 +29,6 @@ class Videos extends Component {
     componentWillMount() {
         axios.get('https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=24&type=video&channelId=UCBUjqoMx35gv8BKd0pz7hag&key=AIzaSyD2qbpCK4gJfuYDlE8t9aM6n2i1GSrDeEE')
             .then((response) => {
-                console.log(response.data.items);
                 this.setState({
                     videos: response.data.items
                 })
