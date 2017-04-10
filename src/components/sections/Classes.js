@@ -4,14 +4,18 @@ import './Classes.css';
 import Section from '../Section';
 import moment from 'moment';
 import axios from 'axios';
-import domtoimage from 'dom-to-image';
 
 class WeekCol extends Component {
     renderEvents = () => {
         let {events} = this.props;
+        const colors = {
+            1: 'white',
+            2: '#ff86cd',
+            3: '#DA91FF'
+        };
         return events.map((event, index) => {
             return (
-                <div key={index} className="event">
+                <div key={index} className="event" style={{color: colors[event.type]}}>
                     {event.time} <br/>
                     {event.description}
                 </div>
@@ -21,6 +25,7 @@ class WeekCol extends Component {
     };
 
     render() {
+
 
         return (
             <div className="week-col">
@@ -69,20 +74,25 @@ class Classes extends Component {
             }
 
         })
-            .then((response) =>{
+            .then((response) => {
                 let weekEvents = {};
                 response.data.items.map((event) => {
                     let day = moment(event.start.dateTime).format('dddd');
+                    let type = 1;
 
-                    if(!weekEvents[day]) weekEvents[day] = [];
+                    if (event.summary.indexOf('(Ind.)') !== -1) type = 3;
+                    if (event.summary.indexOf('CrystalArts:') !== -1) type = 2;
+
+                    if (!weekEvents[day]) weekEvents[day] = [];
 
                     return weekEvents[day].push({
                         time: `${moment(event.start.dateTime).format('h:mm a')} - ${moment(event.end.dateTime).format('h:mm a')}`,
-                        description: event.summary
+                        description: event.summary.replace('(Ind.)', ""),
+                        type: type
                     });
                 });
                 this.setState({
-                   weekEvents
+                    weekEvents
                 });
                 console.log(weekEvents);
             })

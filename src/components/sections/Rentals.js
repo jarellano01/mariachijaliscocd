@@ -5,7 +5,7 @@ import Section from '../Section';
 class Rentals extends Component {
     render(){
         return(
-            <Section id="about">
+            <Section id="rentals">
 
                 <Col xs={12} md={6} mdPush={6}>
                     <h1 className="title">24 Hour Rentals</h1>

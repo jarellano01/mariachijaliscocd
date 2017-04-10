@@ -27,10 +27,21 @@ class Videos extends Component {
     };
 
     componentWillMount() {
-        axios.get('https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=24&type=video&channelId=UCBUjqoMx35gv8BKd0pz7hag&key=AIzaSyD2qbpCK4gJfuYDlE8t9aM6n2i1GSrDeEE')
+        axios.get('https://www.googleapis.com/youtube/v3/playlistItems',{
+            params: {
+                part:'snippet',
+                maxResults:24,
+                type:'video',
+                playlistId:'PLSqxjxpZXvvwgQjRugpwJnEXRxwLPgXWk',
+                key:'AIzaSyD2qbpCK4gJfuYDlE8t9aM6n2i1GSrDeEE'
+            }
+        })
             .then((response) => {
+                let videos = response.data.items.filter((video) => {
+                    return video.snippet.title.toLowerCase() !== "private video"
+                });
                 this.setState({
-                    videos: response.data.items
+                    videos: videos
                 })
             })
             .catch(function (error) {
@@ -45,7 +56,9 @@ class Videos extends Component {
                 <div>Loading ...</div>
             )
         }
+
         return videos.map((video) => {
+            console.log(video.snippet);
             return (
                 <GridItem
                     key={video.etag}

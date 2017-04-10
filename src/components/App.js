@@ -9,6 +9,7 @@ import Background from './Background';
 import Videos from './sections/Videos';
 import Rentals from './sections/Rentals';
 import Classes from './sections/Classes';
+import Subscribe from './sections/Subscribe';
 
 class App extends Component {
     render() {
@@ -24,6 +25,7 @@ class App extends Component {
                 <Rentals/>
 
                 <Contact/>
+                <Subscribe/>
             </div>
         );
     }
