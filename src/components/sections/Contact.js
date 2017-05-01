@@ -63,7 +63,6 @@ class Contact extends Component {
                     <h3>Call Us: (818) 231-2312</h3>
                 </Col>
                 <Col xs={12} style={{fontSize: '50px'}} className="SocialBar text-center">
-                    <Icon className="col-xs-2"/>
                     <Icon className="col-xs-2" name="facebook" />
                     <Icon className="col-xs-2" name="twitter" />
                     <Icon className="col-xs-2" name="instagram" />
