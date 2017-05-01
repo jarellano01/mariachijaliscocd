@@ -17,10 +17,13 @@ class Videos extends Component {
 
     }
     select = (id) => {
+        console.log(id);
         this.setState({
-            selected: id,
-            modalOpen: true
+            selected: id
+        }, () => {
+            this.setState({modalOpen:true })
         })
+
     };
     close = () => {
         this.setState({modalOpen: false});
@@ -58,7 +61,6 @@ class Videos extends Component {
         }
 
         return videos.map((video) => {
-            console.log(video.snippet);
             return (
                 <GridItem
                     key={video.etag}
@@ -66,7 +68,7 @@ class Videos extends Component {
                     title={video.snippet.title}
                     ratio="60%"
                     topOffset="-13%"
-                    onClick={()=>this.select(video.id.videoId)}
+                    onClick={()=>this.select(video.snippet.resourceId.videoId)}
                 />
             )
         })
