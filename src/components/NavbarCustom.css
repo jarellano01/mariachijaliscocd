@@ -53,11 +53,11 @@
         font-size: 150%;
     }
 
-    .show-events {
-        border-radius: 0;
-        opacity: 1;
-        width: 100%;
-        left: 0;
-        bottom: 0;
-    }
+    /*.show-events {*/
+        /*border-radius: 0;*/
+        /*opacity: 1;*/
+        /*width: 100%;*/
+        /*left: 0;*/
+        /*bottom: 0;*/
+    /*}*/
 }
