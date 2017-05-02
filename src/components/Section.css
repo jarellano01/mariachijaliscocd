@@ -31,6 +31,10 @@
     bottom: 0;
 }
 
+.flyer {
+    zoom: 200%;
+}
+
 .unhide {
     opacity: 1;
     visibility: visible;
