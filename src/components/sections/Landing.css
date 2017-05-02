@@ -60,6 +60,7 @@
     height: 70px;
     bottom: 0;
     cursor: pointer;
+    z-index: 9999;
 }
 
 .btn-default:hover {
