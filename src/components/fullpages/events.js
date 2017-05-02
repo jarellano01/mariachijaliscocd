@@ -42,6 +42,11 @@ class Events extends Component {
                 <Col xs={12} md={4} mdPull={8} className="text-center">
                     <img src="/images/crystal-pose-tony.jpg" style={{width: '80%'}} alt=""/>
                 </Col>
+                <Link to="/">
+                    <div className="show-events">
+                        Close
+                    </div>
+                </Link>
             </Section>
         )
     }
