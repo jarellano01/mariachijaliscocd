@@ -1,23 +1,20 @@
 import React, {Component} from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
 import App from './components/App';
 import {
     BrowserRouter as Router,
-    Route,
-    Link
+    Route
 } from 'react-router-dom'
 
-import About from './components/sections/About';
 
-class Routes extends Component{
+class Routes extends Component {
     render() {
         return (
             <Router>
-                <div>
-                    <Route exact path="/" component={App} />
-                    <Route path="/events" component={About} />
-                </div>
+                <App/>
             </Router>
+
         )
     }
 }

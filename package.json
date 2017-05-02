@@ -16,6 +16,7 @@
     "librsvg": "^0.7.0",
     "moment": "^2.18.1",
     "react": "^15.4.2",
+    "react-addons-css-transition-group": "^15.5.2",
     "react-big-calendar": "^0.13.0",
     "react-bootstrap": "^0.30.8",
     "react-dom": "^15.4.2",

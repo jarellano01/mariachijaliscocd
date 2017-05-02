@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Navbar, Nav, NavItem} from 'react-bootstrap';
 import scrollToElement from 'scroll-to-element';
 import './NavbarCustom.css';
+import {Link} from 'react-router-dom';
 
 class NavbarCustom extends Component {
     constructor(props) {
@@ -42,7 +43,7 @@ class NavbarCustom extends Component {
             ease: 'inOutSine',
             duration: 1500
         })
-    }
+    };
 
     renderNavItems = () => {
         return this.state.navItems.map((item) => {
@@ -66,6 +67,11 @@ class NavbarCustom extends Component {
                         {this.renderNavItems()}
                     </Nav>
                 </Navbar.Collapse>
+                <Link to="/events">
+                    <div className="show-events">
+                        Upcoming Events
+                    </div>
+                </Link>
             </Navbar>
         )
     }

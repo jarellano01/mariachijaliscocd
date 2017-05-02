@@ -6,6 +6,18 @@ body {
   overflow: auto;
   background-color: transparent;
 }
+
+body + .full-page {
+  overflow: hidden;
+}
+
+a {
+  color: white;
+}
+a:focus, a:hover {
+  color: #f1bfff;
+  text-decoration: underline;
+}
 html {
   /*background: url("/images/cropped-face.jpg") no-repeat fixed;*/
   background-size: cover;

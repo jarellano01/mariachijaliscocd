@@ -28,9 +28,34 @@
     max-height: 370px;
 }
 
+.show-events {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: #ec008c;
+    color: white;
+    padding: 5px 25px 5px 25px;
+    font-size: 30px;
+    border-radius: 30px;
+    opacity: .5;
+}
+
+.show-events:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
 @media (max-width: 766px) {
     .Navbar-Custom {
         text-align: center;
         font-size: 150%;
+    }
+
+    .show-events {
+        border-radius: 0;
+        opacity: 1;
+        width: 100%;
+        left: 0;
+        bottom: 0;
     }
 }

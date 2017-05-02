@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Section from '../Section';
-import {Col, ControlLabel, FormControl, FormGroup, Row, Button} from 'react-bootstrap';
+import {Col} from 'react-bootstrap';
 import axios from 'axios';
 import Icon from 'react-fontawesome';
 import "./SocialBar.css";
@@ -51,7 +51,6 @@ class Contact extends Component {
     };
 
     render() {
-        let {firstName, lastName, email, message} = this.state;
         return (
             <Section id="contact">
                 <Col xs={12}>
@@ -60,13 +59,14 @@ class Contact extends Component {
                 <Col className="text-center">
                     <h3></h3>
                     <h3>Email Us: <a href="mailto:crystalartsdancestudio@gmail.com">crystalartsdancestudio@gmail.com</a></h3>
-                    <h3>Call Us: (818) 231-2312</h3>
+                    <h3>Call Us: <a href="tel:+18186252693">(818) 625-2693</a></h3>
                 </Col>
                 <Col xs={12} style={{fontSize: '50px'}} className="SocialBar text-center">
-                    <Icon className="col-xs-2" name="facebook" />
-                    <Icon className="col-xs-2" name="twitter" />
-                    <Icon className="col-xs-2" name="instagram" />
-                    <Icon className="col-xs-2" name="envelope-o" />
+                    <span className="col-xs-2"/>
+                    <a href=""><Icon className="col-xs-2" name="facebook" /></a>
+                    <a href=""><Icon className="col-xs-2" name="twitter" /></a>
+                    <a href=""><Icon className="col-xs-2" name="instagram" /></a>
+                    <a href=""><Icon className="col-xs-2" name="envelope-o" /></a>
                 </Col>
                 {/*<Col xs={12}>*/}
                     {/*<Row>*/}

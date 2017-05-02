@@ -4427,6 +4427,13 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-addons-css-transition-group@^15.5.2:
+  version "15.5.2"
+  resolved "https://registry.yarnpkg.com/react-addons-css-transition-group/-/react-addons-css-transition-group-15.5.2.tgz#ea7e0a9f0e1c27ca426da4efd3559915bd42ead2"
+  dependencies:
+    fbjs "^0.8.4"
+    object-assign "^4.1.0"
+
 react-big-calendar@^0.13.0:
   version "0.13.0"
   resolved "https://registry.yarnpkg.com/react-big-calendar/-/react-big-calendar-0.13.0.tgz#33bf550fdd2fa31414bd3d33f8ae34d0307521d5"

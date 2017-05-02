@@ -12,3 +12,24 @@
     font-size: 60px;
     text-align: center;
 }
+
+.full-page {
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999;
+    margin-top: 0;
+    overflow: scroll;
+}
+
+.unhide {
+    opacity: 1;
+    visibility: visible;
+}
