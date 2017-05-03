@@ -32,7 +32,11 @@ class Events extends Component {
                 <Col xs={12} md={8} mdPush={2}>
                     <img src="/flyers/pop-up-5-13.jpeg" className="img-responsive flyer" alt=""/>
                 </Col>
-                
+                <Link to="/">
+                    <div className="show-events">
+                        Close
+                    </div>
+                </Link>
             </Section>
         )
     }
