@@ -12,7 +12,7 @@ class NavbarCustom extends Component {
                 {title: 'About', link: '#about'},
                 {title: 'Instructors', link: '#instructors'},
                 {title: 'Schedule', link: '#schedule'},
-                {title: 'Events', link: '#events'},
+                // {title: 'Events', link: '#events'},
                 {title: 'Videos', link: '#videos'},
                 {title: 'Rentals', link: '#rentals'},
                 {title: 'Contact Us', link: '#contact'}
@@ -67,11 +67,11 @@ class NavbarCustom extends Component {
                         {this.renderNavItems()}
                     </Nav>
                 </Navbar.Collapse>
-                <Link to="/events">
-                    <div className="show-events">
-                        Upcoming Events
-                    </div>
-                </Link>
+                {/*<Link to="/events">*/}
+                    {/*<div className="show-events">*/}
+                        {/*Upcoming Events*/}
+                    {/*</div>*/}
+                {/*</Link>*/}
             </Navbar>
         )
     }
