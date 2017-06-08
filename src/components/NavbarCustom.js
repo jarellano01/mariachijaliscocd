@@ -58,7 +58,7 @@ class NavbarCustom extends Component {
             <Navbar inverse collapseOnSelect fixedTop id="my-nav" className="hide1 Navbar-Custom">
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <a href="#"><img src="/images/icon.png" alt=""/>Crystal Arts Dance</a>
+                        <a href="#"><img src="/images/icon.png" alt=""/>CrystalArts Dance</a>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>

@@ -11,7 +11,6 @@ class About extends Component {
 
                 <Col xs={12} md={8} mdPush={4}>
                     <h1 className="title">Our Story</h1>
-                    <Link to="/events">Events</Link>
                     <p>
                         CrystalArts Dance Academy is where creativity and diversity exists! Our mission is to
                         produce well trained dancers in both social and stage levels. Our goal is to provide a
