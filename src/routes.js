@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
 import App from './components/App';
 import {
-    BrowserRouter as Router,
-    Route
+    BrowserRouter as Router
 } from 'react-router-dom'
 
 

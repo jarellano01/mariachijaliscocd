@@ -94,7 +94,6 @@ class Classes extends Component {
                 this.setState({
                     weekEvents
                 });
-                console.log(weekEvents);
             })
             .catch(function (error) {
                 console.log(error);

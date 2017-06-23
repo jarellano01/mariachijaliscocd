@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Navbar, Nav, NavItem} from 'react-bootstrap';
 import scrollToElement from 'scroll-to-element';
 import './NavbarCustom.css';
-import {Link} from 'react-router-dom';
 
 class NavbarCustom extends Component {
     constructor(props) {

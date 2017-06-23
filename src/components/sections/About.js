@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {Col} from 'react-bootstrap';
 import Section from '../Section';
-import {Link} from 'react-router-dom';
 
 class About extends Component {
     render(){
