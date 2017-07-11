@@ -4,18 +4,7 @@ import Section from '../Section';
 import GridItem from '../GridItem';
 import nl2br from 'react-newline-to-break';
 import firebase from 'firebase';
-
-
-let config = {
-    apiKey: "AIzaSyBATKdoLzQG5G1MVgCe74MwJ5z40tSDk-A",
-    authDomain: "test-852cb.firebaseapp.com",
-    databaseURL: "https://test-852cb.firebaseio.com",
-    projectId: "test-852cb",
-    storageBucket: "test-852cb.appspot.com",
-    messagingSenderId: "809092705125"
-};
-firebase.initializeApp(config);
-let dbRef = firebase.database().ref("data/instructors");
+import {instructors} from '../data/instructor';
 
 class Instructors extends Component {
     constructor(props) {
@@ -28,10 +17,8 @@ class Instructors extends Component {
     }
 
     componentWillMount() {
-        dbRef.on('value', (data) => {
-            this.setState({
-                instructors: data.val()
-            })
+        this.setState({
+            instructors: instructors
         })
     }
 
