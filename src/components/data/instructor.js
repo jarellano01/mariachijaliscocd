@@ -1,5 +1,71 @@
 export const instructors = [
     {
+        "image": "crystal.jpg",
+        "nickname": "Crystal Duran",
+        "classes": "Salsa/Bachata",
+        "classTimes": "Tuesdays 8-9pm",
+        "websiteUrl": "",
+        "description": `Crystal Duran was born and raised in Los Angeles, California. She is an Instructor, Choreographer, and Dancer from diverse dance styles such as Salsa, Bachata, Hip-hop, Ballroom and many more. She received her Bachelor of Science in Kinesiology-Dance at California State University of Northridge. She has had the opportunity to work on various shows such as Telemundo, Funny or Die, The Revolution Evolution Show, Kinesis, J.U.I.C.E., Los Angeles Bachata Festival, Albuquerque and Seattle's Salsa Congress. She recently choreographed for Shemar Moore on the Bounce Back. Crystal is owner of CrystalArts Dance Academy where she aspires everyone to not only master creative movement, but to dance for a purpose and with each person's highest level of excellence!`
+    },
+    {
+        "image": "allen_chung.jpg",
+        "nickname": "Allen Chung",
+        "classes": "Assistant Director",
+        "classTimes": "",
+        "websiteUrl": "",
+        "description": `A dancer, choreographer, director, and entertainer who lives to share his art to anyone willing to watch. The greatest compensation to his dancing is seeing people smile and be inspired by his love and passion through his movements.
+
+From watching music videos over and over to taking classes at Cal. State Northridge and other dance studios, Allen has trained in all various styles such as hip-hop, modern, ballet, salsa, bachata, dancehall, and Argentine tango.
+
+He loves to entertain and has performed on various stages across the country, but his main passion and drive is to help others become incredible entertainers onstage as so many have helped him along the way.`
+    },
+    {
+        "image": "lorenzo.jpg",
+        "nickname": "Lorenzo Hanna \"Zagga Zo\"",
+        "classes": "Dancehall 101",
+        "classTimes": "Thursdays 8-9pm",
+        "websiteUrl": "",
+        "description": `Lorenzo “Zagga Zo” Hanna is now internationally known, but was first introduced to dance at a young age at social gatherings with his family. While growing up in South Florida, Lorenzo embraced his Caribbean roots while performing and competing inside of dancehall clubs and parties for many years.
+
+After winning several dancehall competitions and dancing next to some of the best dancehall dancers from Jamaica and South Florida, Lorenzo decided to take his love for dance to the next level by moving to Los Angeles, California to pursue his dreams. Lorenzo is currently part-owner of an internationally known Afro-Caribbean company and dance style calledDancehall Funk.
+
+Credits: American Airlines, America’s Got Talent, Reebok, Redbull, Shaggy, Chris Brown, Snoop Dogg, Dr. Dre, Kevin Lyttle, Flo Rida, Sean Kingston, Nicki Minaj, French Montana, Bruno Mars, and many more.`
+    },
+    {
+        "image": "shannon.jpg",
+        "nickname": "Shannon Vergun",
+        "classes": "Dance It Out &  Zumba Gold *Seniors/Low-Intensity",
+        "classTimes": "Tuesdays 9:30-10:30am & Fridays 9:30-10:30am",
+        "websiteUrl": "",
+        "description": `Shannon Vergun is a life-long fitness enthusiast, and has taught dance fitness and weight training for many years. She is licensed in DIO, Zumba, Zumba Toning, Zumba Kids and Zumba Gold (a low impact Zumba workout). Shannon has studied many forms of dance including ballet, jazz, modern, tap, musical theater, African and belly dance. She was a member of Oregon Dance Company (modern), and is a current member of Apsara and the Tanha Dancers (belly dance).
+
+She teaches dance fitness, and infuses her teaching with her exuberant personality, warm energy and laid-back style. She is gratified by her clients’ success in weight loss, stress relief and pain management, and takes a personal interest in each and every student. She works with a wide age range of people, from the very young to the retired but-young-at-heart.
+
+Shannon is also a licensed lifestyle coach for the Center of Disease Control’s National Diabetes Prevention Program. In addition to health and fitness, Shannon has more than 20 years’ experience in successfully working with creative professionals in a variety of endeavors. She lends a keen eye and vigorous attention to detail in the process of moving new products from market opportunity to marketplace reality. Her current project is Clustas: the Un-Dumbbell, a revolutionary portable resistance-training system:  www.clustas.com
+
+Shannon’s travels have afforded her the grace of establishing lasting relationships with people from all walks of life. She holds a degree in communication and expertise in digital media make her a valuable asset to the wellness community. More than anything, one of Shannon’s guiding philosophies of life is that movement is the cure to many ills and she really means it when she says, “When in doubt, dance!”`
+    },
+    {
+        "image": "liezel.jpg",
+        "nickname": "Liezel Marie Guzman",
+        "classes": "Beg. Hip-Hop",
+        "classTimes": "Mondays 7-8pm",
+        "websiteUrl": "",
+        "description": `Liezel Marie (aka: Liz, Laydeeliz, Liz Marie) Born and raised in Los Angeles always had the heart and love of dance since she was three years old. With her continuous training over the years at Art of the Dance Academy in ballet, tap, and jazz, she fell in love with the culture of hip hop while pursuing her Bachelors of Science in Kinesiology Dance at Cal State Northridge which began her teaching and choreography career. She choreographed for the Los Angeles WNBA Sparks, Anime Impulse, Carnival Choreographers Ball, Club Jete, World of Dance, & Urban Street Jam, dancer for Universal Studios Hollywood, toured with Antics Dance Company across the world, taught at Los Angeles County High School of the Arts, Orange County, Studio School, Cal State Northridge, Zulu, BoogieZone, and Crystal Arts Dance Academy. She continues to grow as a dancer, director, and choreographer with Eleven Talent Agency, her company Project LaVaude and with other aspiring music artists such as Chocoquibtown (Latin Award Winner), American Idol Jessica Sanchez, Chris GoLightly, growing music artist Derek "DHX" Jordan, Alexa Friedman and Lanita Smith. She hopes to soon pursue her Masters of Art in Education or Kinesiology and hope to touch and inspire others with her voice through dance and theatre.`
+    },
+    {
+        "image": "jose.png",
+        "nickname": "Jose Espinoza",
+        "classes": "Argentine Tango",
+        "classTimes": "Wednesdays 7-8pm",
+        "websiteUrl": "",
+        "description": `3rd Place Winner 2017 Argentine Tango Championship USA "Milonga Category"
+
+Jose Espinoza has been extensively trained in the traditional school of Argentine Tango. He carries with him the strong philosophy to make the dance about your dance partner and making the lady shine on the dance floor. As such, his teaching focuses heavily on the basics of connection and is one of the most well structured curriculums for tango. His teaching gives you a very strong fundamental skill set that allows you to build up with any master teacher. He is also known to be one of the fastest teachers to get a novice dancer to start learning in the dance class and getting them to comfortably dance at the milonga dance parties. 
+
+If you want to learn about the classic tango culture, dance it in the traditional style, obtain the most solid fundamental techniques to dance, and hit that dance floor as soon as you can, look no further!`
+    },
+    {
         "image": "del_mak.jpg",
         "nickname": "Del Mak",
         "classes": "Commercial Hip-Hop/Jazz Funk",
@@ -86,14 +152,5 @@ Having combined their knowledge and experience as dancers and teachers, Bruno an
         "classTimes": "Thursdays 7-8pm",
         "websiteUrl": "",
         "description": ``
-    },
-    {
-        "image": "allen_chung.jpg",
-        "nickname": "Allen Chung",
-        "classes": "Assistant Director",
-        "classTimes": "",
-        "websiteUrl": "",
-        "description": ``
     }
-
 ];
