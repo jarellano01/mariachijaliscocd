@@ -8,6 +8,7 @@ import axios from 'axios';
 class WeekCol extends Component {
     renderEvents = () => {
         let {events} = this.props;
+        events = events || []
         const colors = {
             1: 'white',
             2: '#ff86cd',
@@ -76,6 +77,7 @@ class Classes extends Component {
         })
             .then((response) => {
                 let weekEvents = {};
+                console.log(response)
                 response.data.items.map((event) => {
                     let day = moment(event.start.dateTime).format('dddd');
                     let type = 1;
@@ -91,6 +93,7 @@ class Classes extends Component {
                         type: type
                     });
                 });
+                console.log(weekEvents)
                 this.setState({
                     weekEvents
                 });
