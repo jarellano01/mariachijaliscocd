@@ -32,7 +32,6 @@ class Calendar extends Component {
                     }
 
                 });
-                console.log(calendarData);
                 cb(calendarData);
             })
             .catch(function (error) {

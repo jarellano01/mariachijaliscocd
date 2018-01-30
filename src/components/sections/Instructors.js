@@ -33,7 +33,7 @@ class Instructors extends Component {
     };
 
     renderGrid = () => {
-        let {instructors} = this.state;
+        let {instructors} = this.props;
         if(!instructors){
             return (
                 <div>Loading ...</div>
@@ -41,7 +41,7 @@ class Instructors extends Component {
         }
         return instructors.map((instructor, index) => {
             return (
-                <GridItem key={index} image={`/images/instructors/${instructor.image}`} onClick={()=> this.select(instructor)} title={instructor.nickname} />
+                <GridItem key={index} image={instructor.image} onClick={()=> this.select(instructor)} title={instructor.nickname} />
             )
         })
     };
