@@ -21,7 +21,6 @@ class Events extends Component {
 
     componentWillUnmount(){
         document.getElementsByTagName("BODY")[0].className = '';
-        console.log('It worked');
     }
 
 

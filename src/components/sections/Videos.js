@@ -17,7 +17,6 @@ class Videos extends Component {
 
     }
     select = (id) => {
-        console.log(id);
         this.setState({
             selected: id
         }, () => {

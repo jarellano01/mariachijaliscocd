@@ -70,7 +70,7 @@ class Instructors extends Component {
                         <Row className="show-grid">
                             <Col xs={12} sm={4}>
                                 <div className="col-square">
-                                    <img className="img-responsive" src={`/images/instructors/${selected.image}`}
+                                    <img className="img-responsive" src={selected.image}
                                          alt=""/>
                                 </div>
                             </Col>

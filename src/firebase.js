@@ -3,12 +3,12 @@ import React, { Component } from 'react'
 import {instructors} from './components/data/instructor.1'
 
 const config = {
-    apiKey: "AIzaSyApiWrhMjRIZpFx9EYCdTWJ6ubL85YokqE",
-    authDomain: "beat-the-robot.firebaseapp.com",
-    databaseURL: "https://beat-the-robot.firebaseio.com",
-    projectId: "beat-the-robot",
-    storageBucket: "beat-the-robot.appspot.com",
-    messagingSenderId: "49706625687"
+    apiKey: "AIzaSyC6jUQm63fSqxiuNr2c0w93fKPSuJUzkG8",
+    authDomain: "crystalartsdashboard.firebaseapp.com",
+    databaseURL: "https://crystalartsdashboard.firebaseio.com",
+    projectId: "crystalartsdashboard",
+    storageBucket: "crystalartsdashboard.appspot.com",
+    messagingSenderId: "359865221159"
 }
 
 firebase.initializeApp(config)

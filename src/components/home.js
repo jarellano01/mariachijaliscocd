@@ -15,7 +15,6 @@ import {withFirebase} from '../firebase'
 
 class App extends Component {
     render() {
-        console.log(this.props)
         return (
             <div>
                 <Background/>
