@@ -16,7 +16,7 @@ class GridItem extends Component {
         return (
             <Col xs={6} sm={4} md={3} key={title} className="instructor-col" onClick={onClick}>
                 <div className="col-square instructor-block" style={{paddingBottom: ratio}}>
-                    <Image style={{zoom: '150%', top: topOffset}} cloudName="jarellano01" publicId={image} className="img-responsive" width="300" crop="scale" />
+                    <Image style={{zoom: '150%', top: topOffset}} cloudName="jarellano01" publicId={image} className="img-responsive" width="300" crop="scale" secure={true} />
                     <div>
                         {title}
                     </div>

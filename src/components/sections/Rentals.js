@@ -16,10 +16,10 @@ class Rentals extends Component {
                 <Col xs={12} md={6} mdPull={6} className="text-center">
                     <Carousel>
                         <Carousel.Item>
-                            <img width={900} height={500} alt="900x500" src="http://res.cloudinary.com/jarellano01/image/upload/c_scale,w_1920/v1517379240/studiopic_d1fiji.jpg"/>
+                            <img width={900} height={500} alt="900x500" src="https://res.cloudinary.com/jarellano01/image/upload/c_scale,w_1920/v1517379240/studiopic_d1fiji.jpg"/>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img width={900} height={500} alt="900x500" src="http://res.cloudinary.com/jarellano01/image/upload/c_scale,w_1920/v1517379240/studiopic_d1fiji.jpg"/>
+                            <img width={900} height={500} alt="900x500" src="https://res.cloudinary.com/jarellano01/image/upload/c_scale,w_1920/v1517379240/studiopic_d1fiji.jpg"/>
                         </Carousel.Item>
                     </Carousel>
 

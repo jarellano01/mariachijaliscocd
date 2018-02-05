@@ -59,9 +59,9 @@ class Contact extends Component {
                 </Col>
                 <Col className="text-center">
                     <h3></h3>
-                    <h3>Email Us: <a href="mailto:crystalartsdanceacademy@gmail.com">crystalartsdanceacademy@gmail.com</a>
+                    <h3>Email Us: <br/><a style={{wordBreak: "break-all"}} href="mailto:crystalartsdanceacademy@gmail.com">crystalartsdanceacademy@gmail.com</a>
                     </h3>
-                    <h3>Call Us: <a href="tel:+18186252693">(818) 625-2693</a></h3>
+                    <h3>Call Us:<br/> <a href="tel:+18186252693">(818) 625-2693</a></h3>
                     <a href="https://goo.gl/maps/ma19WbboaJN2" target="_blank">
                         <h3>18421 Ventura Blvd, <br/> Tarzana, CA 91356</h3>
                     </a>

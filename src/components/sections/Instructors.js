@@ -3,8 +3,8 @@ import {Col, Modal, Row} from 'react-bootstrap';
 import Section from '../Section';
 import GridItem from '../GridItem';
 import nl2br from 'react-newline-to-break';
-import firebase from 'firebase';
 import {instructors} from '../data/instructor';
+import {Image} from 'cloudinary-react'
 
 class Instructors extends Component {
     constructor(props) {
@@ -70,8 +70,7 @@ class Instructors extends Component {
                         <Row className="show-grid">
                             <Col xs={12} sm={4}>
                                 <div className="col-square">
-                                    <img className="img-responsive" src={selected.image}
-                                         alt=""/>
+                                    <Image cloudName="jarellano01" publicId={selected.image} className="img-responsive" width="300" crop="scale" secure={true} />
                                 </div>
                             </Col>
                             <Col xs={12} sm={8}>

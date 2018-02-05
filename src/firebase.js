@@ -1,6 +1,5 @@
 import firebase from 'firebase'
 import React, { Component } from 'react'
-import {instructors} from './components/data/instructor.1'
 
 const config = {
     apiKey: "AIzaSyC6jUQm63fSqxiuNr2c0w93fKPSuJUzkG8",
@@ -73,9 +72,6 @@ export function signOut() {
 
 export function withFirebase (WrappedComponent) {
     return class FirebaseComponent extends Component {
-        constructor(props) {
-            super(props)
-        }
         componentDidMount() {
             websiteStructureRef.orderByKey().once('value', this.handleStructureChange)
         }
