@@ -9,11 +9,7 @@ class NavbarCustom extends Component {
         this.state = {
             navItems: [
                 {title: 'About', link: '#about'},
-                {title: 'Instructors', link: '#instructors'},
-                {title: 'Schedule', link: '#schedule'},
-                // {title: 'Events', link: '#events'},
                 {title: 'Videos', link: '#videos'},
-                {title: 'Rentals', link: '#rentals'},
                 {title: 'Contact Us', link: '#contact'}
             ]
         }
@@ -57,7 +53,8 @@ class NavbarCustom extends Component {
             <Navbar inverse collapseOnSelect fixedTop id="my-nav" className="hide1 Navbar-Custom">
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <a href="#"><img src="/images/icon.png" alt=""/>CrystalArts Dance</a>
+                        {/*<a href="#"><img src="/images/icon.png" alt=""/>CrystalArts Dance</a>*/}
+                      <a href="#">Mariachi Jalisco</a>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>

@@ -50,7 +50,7 @@
 }
 
 .learn-more {
-    background-color: #ec008c;
+    background-color: #d08f1a;
     position: absolute;
     right: 0;
     border-radius: 0;
@@ -64,7 +64,7 @@
 }
 
 .btn-default:hover {
-    background-color: #8e3691;
+    background-color: #ffc905;
     border-color: transparent;
     color: #fff;
 }
@@ -76,7 +76,7 @@
 
 .section-title {
     text-align: center;
-    font-family: cursive;
+    /*font-family: cursive;*/
 }
 
 

@@ -15,7 +15,7 @@ a {
   color: white;
 }
 a:focus, a:hover {
-  color: #f1bfff;
+  color: #d08f1a;
   text-decoration: underline;
 }
 html {

@@ -1,5 +1,5 @@
 .Navbar-Custom {
-    font-family: cursive;
+    /*font-family: cursive;*/
 }
 
 .navbar-inverse {
@@ -38,7 +38,7 @@
     font-size: 30px;
     border-radius: 30px;
     opacity: .5;
-    font-family: cursive;
+    /*font-family: cursive;*/
     text-align: center;
 }
 
