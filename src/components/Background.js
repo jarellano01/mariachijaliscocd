@@ -1,10 +1,15 @@
 import React, {Component} from 'react';
 
-
 class Background extends Component {
+    constructor (props) {
+      super(props)
+      this.state = {
+        img: 'https://res.cloudinary.com/jarellano01/image/upload/v1540349194/mjcd_backdrop_thop0r.png'
+      }
+    }
     render() {
         return (
-            <img src="https://res.cloudinary.com/jarellano01/image/upload/c_scale,q_auto:best,w_1920/v1517376116/cropped-face_m9b0mi.jpg" className="background" alt=""/>
+            <img src={this.state.img} className="background" alt=""/>
         )
     }
 }

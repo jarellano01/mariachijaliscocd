@@ -1,11 +1,10 @@
 {
-  "name": "crystal-arts-react",
+  "name": "mariachi-jalisco-cd",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
     "react-scripts": "^2.0.5"
   },
-  "homepage": "http://www.jigglybrain.com/",
   "dependencies": {
     "axios": "^0.16.0",
     "cloudinary-react": "^1.0.6",

@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "crystalarts-157501"
+    "prod": "mariachijaliscocd-53f60",
+    "default": "mariachijaliscocd-53f60"
   }
 }
