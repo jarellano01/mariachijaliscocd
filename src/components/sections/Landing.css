@@ -29,10 +29,7 @@
 
 .landing-container .info {
     width: 58%;
-    margin: auto;
-    position: absolute;
-    right: 64px;
-    top: 96px;
+    margin: 30px auto auto;
 }
 
 .landing-container .slogan {

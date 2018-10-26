@@ -8,7 +8,7 @@ class Landing extends Component {
             <div className="landing-container" id="home">
                 <div className=" text-center">
                     <div className="info">
-                        {/*<img src="/images/logo_black.png" className="logo img-responsive" alt="" />*/}
+                        <img src="/images/logo.png" className="logo img-responsive" alt="" />
                     </div>
                     <a className="btn btn-default learn-more" onClick={()=> scrollToElement('#about',{
                         offset: -50,

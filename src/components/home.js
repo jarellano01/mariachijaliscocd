@@ -6,7 +6,6 @@ import Landing from './sections/Landing'
 import About from './sections/About'
 import Contact from './sections/Contact'
 import Videos from './sections/Videos'
-import { withFirebase } from '../firebase'
 
 class App extends Component {
   render () {
@@ -23,4 +22,4 @@ class App extends Component {
   }
 }
 
-export default withFirebase(App)
+export default App
