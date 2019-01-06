@@ -5,17 +5,14 @@ import { Col, Row, Modal } from 'react-bootstrap'
 import axios from 'axios'
 import YouTube from 'react-youtube'
 
-// import search from 'youtube-search';
-
 class Videos extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = {
       videos: null,
       modalOpen: false,
       selected: null
     }
-
   }
 
   select = (id) => {
@@ -30,28 +27,28 @@ class Videos extends Component {
     this.setState({ modalOpen: false })
   }
 
-    componentWillMount() {
-        axios.get('https://www.googleapis.com/youtube/v3/playlistItems',{
-            params: {
-                part:'snippet',
-                maxResults:24,
-                type:'video',
-                playlistId:'PLwcYW-oF48znlB4lsyqRlBKSnr9TeMcd8',
-                key:'AIzaSyD2qbpCK4gJfuYDlE8t9aM6n2i1GSrDeEE'
-            }
+  componentWillMount() {
+    axios.get('https://www.googleapis.com/youtube/v3/playlistItems', {
+      params: {
+        part: 'snippet',
+        maxResults: 24,
+        type: 'video',
+        playlistId: 'PLwcYW-oF48znlB4lsyqRlBKSnr9TeMcd8',
+        key: 'AIzaSyC315zDWamEZQbRx22kUs11ExFXINrvdMI'
+      }
+    })
+      .then((response) => {
+        let videos = response.data.items.filter((video) => {
+          return video.snippet.title.toLowerCase() !== "private video"
+        });
+        this.setState({
+          videos: videos
         })
-            .then((response) => {
-                let videos = response.data.items.filter((video) => {
-                    return video.snippet.title.toLowerCase() !== "private video"
-                });
-                this.setState({
-                    videos: videos
-                })
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
-    }
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
 
   renderGrid = () => {
     let { videos } = this.state
@@ -75,7 +72,7 @@ class Videos extends Component {
     })
   }
 
-  render () {
+  render() {
     return (
       <Section id="videos">
         <Col xs={12}>
