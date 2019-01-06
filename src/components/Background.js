@@ -9,7 +9,8 @@ class Background extends Component {
     }
     render() {
         return (
-            <img src={this.state.img} className="background" alt=""/>
+            // <img src={this.state.img} className="background" alt=""/>
+            <div></div>
         )
     }
 }
