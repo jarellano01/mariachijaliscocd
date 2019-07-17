@@ -14,9 +14,10 @@ class Contact extends Component {
             lastName: '',
             email: 'mariachijaliscomd@gmail.com',
             phone: '+18183239392',
-            instagram: 'http://instagram.com/crystalartsdanceacademy',
+            displayPhone: '(818) 323-9392',
+            instagram: 'https://www.instagram.com/mariachijaliscocd',
             youtube: 'https://www.youtube.com/user/duranserrano',
-            facebook: ''
+            facebook: 'https://www.facebook.com/MariachiJaliscoCD'
         }
     }
 
@@ -63,7 +64,7 @@ class Contact extends Component {
                     <h3></h3>
                     <h3>Email Us: <br/><a style={{wordBreak: "break-all"}} href={`mailto:${this.state.email}`}>{this.state.email}</a>
                     </h3>
-                    <h3>Call Us:<br/> <a href={`tel:${this.state.phone}`}>{this.state.phone}</a></h3>
+                    <h3>Call Us:<br/> <a href={`tel:${this.state.phone}`}>{this.state.displayPhonev}</a></h3>
                     {/*<a href="https://goo.gl/maps/ma19WbboaJN2" target="_blank">*/}
                         <h3>Los Angeles / San Fernando Valley</h3>
                     {/*</a>*/}
