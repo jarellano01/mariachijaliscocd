@@ -16,7 +16,7 @@ class Contact extends Component {
             phone: '+18183239392',
             displayPhone: '(818) 323-9392',
             instagram: 'https://www.instagram.com/mariachijaliscocd',
-            youtube: 'https://www.youtube.com/user/duranserrano',
+            youtube: 'https://www.youtube.com/channel/UC28d4H2up7fyraE6go6QohQ',
             facebook: 'https://www.facebook.com/MariachiJaliscoCD'
         }
     }
